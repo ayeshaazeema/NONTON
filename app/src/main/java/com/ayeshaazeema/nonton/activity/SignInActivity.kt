@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.ayeshaazeema.nonton.R
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
@@ -27,6 +29,8 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
 
         supportActionBar?.hide()
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
         tv_forgot.setOnClickListener(this)
         tv_sign_up_sign_in.setOnClickListener(this)
         btn_sign_in.setOnClickListener(this)
@@ -35,11 +39,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View) {
         when (p0.id) {
             R.id.tv_forgot -> startActivity(ForgotPasswordActivity.getLaunchService(this))
-            R.id.tv_sign_in_sign_up -> startActivity(
-                SignUpActivity.getLaunchService(
-                    this
-                )
-            )
+            R.id.tv_sign_up_sign_in -> startActivity(SignUpActivity.getLaunchService(this))
             R.id.btn_sign_in -> loginEmailPass()
         }
     }

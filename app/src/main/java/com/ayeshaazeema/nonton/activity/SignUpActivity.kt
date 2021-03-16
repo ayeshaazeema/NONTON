@@ -31,6 +31,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.hide()
 
         btn_sign_up.setOnClickListener(this)
+        tv_sign_in_sign_up.setOnClickListener(this)
 
         mAuth = FirebaseAuth.getInstance()
     }
