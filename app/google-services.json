@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "292129744318",
+    "project_id": "nonton-a7cbe",
+    "storage_bucket": "nonton-a7cbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292129744318:android:de9edb7d9d3375d85c45ef",
+        "android_client_info": {
+          "package_name": "com.ayeshaazeema.nonton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292129744318-otqgvcqj78gl6364i272ij5rao5c0np2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ayeshaazeema.nonton",
+            "certificate_hash": "02f555f0c88fd9e32d03860f51a496ed1fe47459"
+          }
+        },
+        {
+          "client_id": "292129744318-17f4ipeht3bgfu9fhpd29hjcm2hl19s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW1cLzu_B9sBupiI1fB23dC576OnRrv_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292129744318-17f4ipeht3bgfu9fhpd29hjcm2hl19s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
