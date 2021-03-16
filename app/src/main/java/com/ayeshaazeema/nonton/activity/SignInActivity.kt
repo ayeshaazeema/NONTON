@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.activity_sign_in.*
 
 class SignInActivity : AppCompatActivity(), View.OnClickListener {
 
+    private lateinit var firebaseAuth: FirebaseAuth
+
     companion object {
         fun getLaunchService(from: Context) = Intent(from, SignInActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
