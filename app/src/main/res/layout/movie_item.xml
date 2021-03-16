@@ -62,8 +62,8 @@
 
     <ImageView
         android:id="@+id/iv_vote_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_20dp"
+        android:layout_height="@dimen/_20dp"
         android:layout_marginStart="@dimen/_10dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_release_date_item"
         app:layout_constraintStart_toEndOf="@+id/tv_release_date_item"

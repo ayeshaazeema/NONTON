@@ -38,4 +38,6 @@
     <string name="genres">Genres</string>
     <string name="main_message">Explore movies to watch!</string>
     <string name="search">Search ...</string>
+    <string name="cast">Cast</string>
+    <string name="watch_now">Watch Now</string>
 </resources>

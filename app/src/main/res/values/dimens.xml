@@ -25,4 +25,10 @@
     <dimen name="_14sp">14sp</dimen>
     <dimen name="_100dp">100dp</dimen>
     <dimen name="_35dp">35dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_350dp">350dp</dimen>
+    <dimen name="_205dp">205dp</dimen>
+    <dimen name="_140dp">140dp</dimen>
+    <dimen name="_275dp">275dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
 </resources>
