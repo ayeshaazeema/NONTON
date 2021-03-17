@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.hide()
 
         iv_profile_main.setOnClickListener(this)
+
         getMovie()
 
         firebaseUser = FirebaseAuth.getInstance().currentUser
@@ -62,15 +63,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun getMovie() {
         val apiKey = "efa3e25518b94d33a911e5c947b673ba"
+        val lang = "en-US"
 
         val loading = ProgressDialog.show(this, "Request Data", "Loading...")
-        RetrofitConfig.getInstance().getMovieData(apiKey).enqueue(
+        RetrofitConfig.getInstance().getMovieData(apiKey, lang).enqueue(
             object : Callback<ResponseMovie> {
 
-                override fun onResponse(call: Call<ResponseMovie>, response: Response<ResponseMovie>) {
+                override fun onResponse(
+                    call: Call<ResponseMovie>,
+                    response: Response<ResponseMovie>
+                ) {
                     Log.d("Response", "Success" + response.body()?.results)
                     loading.dismiss()
                     if (response.isSuccessful) {
+                        Log.e("TAG", "onResponse: ${response.body()?.results?.get(0)?.title}")
                         Toast.makeText(this@MainActivity, "Data Success!", Toast.LENGTH_SHORT)
                             .show()
                         val movieData = response.body()?.results
@@ -86,16 +92,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
 
                 override fun onFailure(call: Call<ResponseMovie>, t: Throwable) {
-                    Log.d("Response", "Failed :" + t.localizedMessage)
-                    loading.dismiss()
+                    TODO("Not yet implemented")
                 }
             }
         )
     }
 
     override fun onClick(p0: View) {
-        when (p0.id) {
+        when(p0.id){
             R.id.iv_profile_main -> startActivity(Intent(ProfileActivity.getLaunchService(this)))
         }
     }
 }
+

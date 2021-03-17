@@ -8,6 +8,7 @@ import retrofit2.http.Query
 interface ApiService {
     @GET("movie")
     fun getMovieData(
-        @Query("apiKey") apiKey: String?
+        @Query("api_key") apiKey: String?,
+        @Query("language") lang: String?
     ): Call<ResponseMovie>
 }
