@@ -8,8 +8,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.ayeshaazeema.nonton.R
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
@@ -70,7 +68,8 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
                     Toast.makeText(this, "Sign In Failed", Toast.LENGTH_SHORT).show()
                 }
             }.addOnFailureListener {
-                val progress = ProgressDialog(this,
+                val progress = ProgressDialog(
+                    this,
                     R.style.Theme_AppCompat_Light_Dialog
                 )
                 progress.hide()

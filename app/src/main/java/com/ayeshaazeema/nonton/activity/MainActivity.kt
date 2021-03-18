@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(p0: View) {
-        when(p0.id){
+        when (p0.id) {
             R.id.iv_profile_main -> startActivity(Intent(ProfileActivity.getLaunchService(this)))
         }
     }

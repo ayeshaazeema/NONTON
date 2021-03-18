@@ -317,6 +317,7 @@
         android:text="@string/sign_out"
         android:textColor="@color/main"
         android:textSize="@dimen/_18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/ib_sign_out"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

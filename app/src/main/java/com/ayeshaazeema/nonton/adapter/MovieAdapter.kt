@@ -12,7 +12,8 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.movie_item.view.*
 import org.jetbrains.anko.intentFor
 
-class MovieAdapter(var context: Context, var listMovie: List<ResultsItem?>?) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+class MovieAdapter(var context: Context, var listMovie: List<ResultsItem?>?) :
+    RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(movie: ResultsItem) {
@@ -40,6 +41,4 @@ class MovieAdapter(var context: Context, var listMovie: List<ResultsItem?>?) : R
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(listMovie?.get(position)!!)
     }
-
-
 }

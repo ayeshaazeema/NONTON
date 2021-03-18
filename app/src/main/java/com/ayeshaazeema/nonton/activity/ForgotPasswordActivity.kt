@@ -11,7 +11,7 @@ import com.ayeshaazeema.nonton.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_forgot_password.*
 
-class ForgotPasswordActivity : AppCompatActivity(), View.OnClickListener  {
+class ForgotPasswordActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var mAuth: FirebaseAuth
 

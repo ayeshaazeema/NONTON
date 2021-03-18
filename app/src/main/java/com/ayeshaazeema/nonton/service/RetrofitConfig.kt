@@ -18,5 +18,4 @@ object RetrofitConfig {
         .client(client).addConverterFactory(GsonConverterFactory.create(gson)).build()
 
     fun getInstance(): ApiService = retrofit.create(ApiService::class.java)
-
 }
